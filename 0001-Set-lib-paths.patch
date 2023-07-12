@@ -1,0 +1,33 @@
+From 690f14211cc18396d4691a78eded0a30aebb20c1 Mon Sep 17 00:00:00 2001
+From: William Douglas <william.douglas@intel.com>
+Date: Wed, 12 Jul 2023 08:32:58 -0700
+Subject: [PATCH] Set lib paths
+
+---
+ Makefile | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index 404f036..2eb6c2f 100644
+--- a/Makefile
++++ b/Makefile
+@@ -38,12 +38,12 @@ BINDIR = /usr/bin
+ BINMODE = 755
+ CONFDIR = /etc
+ CONFMODE = 644
+-SHARED_LIBDIR = /lib
++SHARED_LIBDIR = /usr/lib64
+ SHARED_LIBDIR_CYGWIN = /usr/bin
+-SHARED_LIBDIR_SUN = /usr/lib
++SHARED_LIBDIR_SUN = /usr/lib64
+ SHARED_LIBDIR_REL = ../..$(SHARED_LIBDIR)
+-DEVEL_LIBDIR = /usr/lib
+-SECUREDIR = /lib/security
++DEVEL_LIBDIR = /usr/lib64
++SECUREDIR = /usr/lib64/security
+ SECUREDIR_SUN = /usr/lib/security
+ SECUREDIR_DARWIN = /usr/lib/pam
+ INCLUDEDIR = /usr/include
+-- 
+2.41.0
+

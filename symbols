@@ -1,0 +1,6 @@
+libpasswdqc.so.1:passwdqc_check
+libpasswdqc.so.1:passwdqc_params_free
+libpasswdqc.so.1:passwdqc_params_load
+libpasswdqc.so.1:passwdqc_params_parse
+libpasswdqc.so.1:passwdqc_params_reset
+libpasswdqc.so.1:passwdqc_random
